@@ -1,0 +1,137 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #ff6f61, #6a11cb, #2575fc);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .input-group select,
+  .input-group input,
+  .convert-button {
+    transition: all 0.3s ease;
+  }
+  
+  .input-group select,
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .input-group select:focus,
+  .input-group input:focus {
+    background-color: #19a4d2;
+  }
+  
+  .convert-button {
+    background-color: #4a90e2;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 50px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .convert-button:hover {
+    background-color: #0068b7;
+    transform: scale(1.1);
+  }
+  
+  .swap-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 15px;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    padding: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .swap-icon:hover {
+    color: #19a4d2;
+    transform: rotate(180deg);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
